@@ -1,4 +1,4 @@
-package com.riadsafowan.java
+package com.riadsafowan.kotlin
 
 import java.util.*
 
@@ -19,6 +19,14 @@ fun main() {
     }
     val avg = total / ints.size
     println("Average = $avg")
+    var aboveAvg = 0
+    for (i in ints.indices) {
+        if (ints[i] > avg) {
+            aboveAvg++
+        }
+    }
+    val pAbvAvg = aboveAvg * 100 / ints.size
+    println("There are $pAbvAvg% of numbers above average")
 
     //  2. Take an integer from user, generate that many fibonacci numbers and store in an array. Display the array.
     print("Enter a number for fibonacci :")

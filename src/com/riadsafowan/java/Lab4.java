@@ -19,6 +19,14 @@ class Task1 {
         }
         int avg = total / ints.length;
         System.out.println("Average = " + avg);
+        int aboveAvg = 0;
+        for (int i = 0; i < ints.length; i++) {
+            if (ints[i] > avg) {
+                aboveAvg++;
+            }
+        }
+        int pAbvAvg = aboveAvg * 100 / ints.length;
+        System.out.println("There are " + pAbvAvg + "% of numbers above average");
     }
 }
 
@@ -47,7 +55,7 @@ class Task2 {
 }
 
 class Task3 {
-//  Take a 3X3 array and initialize it with these values:
+    //  Take a 3X3 array and initialize it with these values:
 //  3 4 9
 //  2 9 11
 //  4 6 0
