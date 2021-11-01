@@ -47,6 +47,11 @@ class Task2 {
 }
 
 class Task3 {
+//  Take a 3X3 array and initialize it with these values:
+//  3 4 9
+//  2 9 11
+//  4 6 0
+//  Calculate and print the sum for each row, column and both diagonals.
     public static void main(String[] args) {
         int rows, cols, sumRow, sumCol, sumD = 0;
         int[][] a = {
@@ -84,7 +89,7 @@ class Task3 {
         sumD = 0;
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                if (i+j == a.length-1)
+                if (i + j == a.length - 1)
                     sumD += a[i][j];
             }
         }
@@ -92,14 +97,14 @@ class Task3 {
     }
 }
 
-class Task4{
-//  4. Take an integer array and print only the numbers that are in consecutive orders of 3.
+class Task4 {
+    //  4. Take an integer array and print only the numbers that are in consecutive orders of 3.
     public static void main(String[] args) {
-        int[] array = {1,2,3,2,2,2,1,1,4,4,4,3,3};
+        int[] array = {1, 2, 3, 2, 2, 2, 1, 1, 4, 4, 4, 3, 3};
         System.out.print("Outputs :");
-        for (int i = 0; i < array.length-3; i++) {
-            if (array[i]==array[i+1]&&array[i+1]==array[i+2]){
-                System.out.print(array[i]+" ");
+        for (int i = 0; i < array.length - 3; i++) {
+            if (array[i] == array[i + 1] && array[i + 1] == array[i + 2]) {
+                System.out.print(array[i] + " ");
             }
         }
     }
