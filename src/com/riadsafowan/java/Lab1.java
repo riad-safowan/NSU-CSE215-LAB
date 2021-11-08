@@ -12,13 +12,13 @@ public class Lab1 {
                 "Age: 21\n" +
                 "Department: ECE");
 
-        Utils.drawHorizontalLine();
+        Utils.Companion.drawHorizontalLine();
 
 //  2. Write a program that prints from 1 to 10.
         for (int i = 1; i <= 10; i++) {
             System.out.println(i);
         }
-        Utils.drawHorizontalLine();
+        Utils.Companion.drawHorizontalLine();
 
 //  3. Write a program that determines if an integer is odd or even.
         System.out.print("\nEnter a number: ");
