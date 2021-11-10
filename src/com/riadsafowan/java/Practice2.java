@@ -24,7 +24,7 @@ public class Practice2 {
 //        3.
         System.out.print("Enter a number: ");
         num = scanner.nextInt();
-        System.out.println(num+" incremented by 1 : " + addOne(num));
+        System.out.println(num + " incremented by 1 : " + addOne(num));
     }
 
     //1.
