@@ -74,12 +74,12 @@ public class Lab5 {
 
                 switch (menu) {
                     case 1 -> {
-                        System.out.print("Enter the amount of deposite: ");
+                        System.out.print("Enter the amount of deposit: ");
                         deposit(scanner.nextDouble());
                         System.out.println("Current Balance " + balance);
                     }
                     case 2 -> {
-                        System.out.print("Enter the amount of deposite: ");
+                        System.out.print("Enter the amount of deposit: ");
                         withdraw(scanner.nextDouble());
                         System.out.println("Current Balance " + balance);
                     }
