@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Lab5 {
     static class Task1 {
-        //        1. Write a method countVowels(String arg) that takes a String as parameter and returns the number of vowels.
+        //   1. Write a method countVowels(String arg) that takes a String as parameter and returns the number of vowels.
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
             System.out.print("Enter a String to count it's vowels : ");
@@ -36,7 +36,7 @@ public class Lab5 {
             else System.out.println(text + " is not a Palindrome");
         }
 
-        public static boolean isPalindrome(String arg) {
+        private static boolean isPalindrome(String arg) {
             boolean isPalindrome = true;
             for (int i = 0; i < arg.length(); i++) {
                 if (arg.charAt(i) != arg.charAt(arg.length() - 1 - i)) {
@@ -49,15 +49,16 @@ public class Lab5 {
     }
 
     static class Task3 {
-        //        3. Write a program that has the following static variable - balance (initial value 0) and these static methods:
-//        deposit(double amount): Increase account balance
-//        withdraw(double amount): Decrease account balance
-//      Now run an infinite loop in main program so it displays user with following options:
-//      1.   Deposit
-//      2.   Withdraw
-//      3.   Balance
-//      4.   Exit
-//        Under each option, the program should ask for appropriate user input (i.e. amount to deposit).
+        //   3. Write a program that has the following static variable - balance (initial value 0) and these static methods:
+        //   deposit(double amount): Increase account balance
+        //   withdraw(double amount): Decrease account balance
+        //   Now run an infinite loop in main program so it displays user with following options:
+        //   1.   Deposit
+        //   2.   Withdraw
+        //   3.   Balance
+        //   4.   Exit
+        //   Under each option, the program should ask for appropriate user input (i.e. amount to deposit).
+
         static double balance = 0.0;
 
         public static void main(String[] args) {
@@ -76,27 +77,27 @@ public class Lab5 {
                     case 1 -> {
                         System.out.print("Enter the amount of deposit: ");
                         deposit(scanner.nextDouble());
-                        System.out.println("Current Balance " + balance);
+                        balance();
                     }
                     case 2 -> {
-                        System.out.print("Enter the amount of deposit: ");
+                        System.out.print("Enter the amount of withdraw: ");
                         withdraw(scanner.nextDouble());
-                        System.out.println("Current Balance " + balance);
+                        balance();
                     }
                     case 3 -> balance();
                 }
             } while (menu != 4);
         }
 
-        public static void deposit(double amount) {
+        private static void deposit(double amount) {
             balance += amount;
         }
 
-        public static void withdraw(double amount) {
+        private static void withdraw(double amount) {
             balance -= amount;
         }
 
-        public static void balance() {
+        private static void balance() {
             System.out.println("Current Balance " + balance);
         }
 
