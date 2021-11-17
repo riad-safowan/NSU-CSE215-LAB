@@ -39,14 +39,12 @@ public class Lab5 {
         }
 
         private static boolean isPalindrome(String arg) {
-            boolean isPalindrome = true;
             for (int i = 0; i < arg.length(); i++) {
                 if (arg.charAt(i) != arg.charAt(arg.length() - 1 - i)) {
-                    isPalindrome = false;
-                    break;
+                    return false;
                 }
             }
-            return isPalindrome;
+            return true;
         }
     }
 
