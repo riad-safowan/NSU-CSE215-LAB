@@ -25,7 +25,7 @@ class Practice3 {
     internal object Task2 {
         //   2. Write a method named isPrime, which takes an integer as an argument and returns true
         //   if the argument is a prime number, or false otherwise.
-        //   Also write main method that displays prime numbers between 1 to 500.
+        //   Also write main method that displays prime numbers between 1 and 500.
         @JvmStatic
         fun main(args: Array<String>) {
             for (i in 1..500) {
