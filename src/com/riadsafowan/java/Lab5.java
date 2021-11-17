@@ -24,9 +24,11 @@ public class Lab5 {
     }
 
     static class Task2 {
-        //   2. Write a method isPalindrome(String arg) that determines if a String is palindrome or not.
-        //   Palindrome is when a String remains the same after reversing. The method should return boolean type.
-        //   For example: MADAM is palindrome.
+        /*
+          2. Write a method isPalindrome(String arg) that determines if a String is palindrome or not.
+          Palindrome is when a String remains the same after reversing. The method should return boolean type.
+          For example: MADAM is palindrome.
+         */
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
             System.out.print("Enter a String to check if it is a palindrome : ");
@@ -52,7 +54,7 @@ public class Lab5 {
         //   3. Write a program that has the following static variable - balance (initial value 0) and these static methods:
         //   deposit(double amount): Increase account balance
         //   withdraw(double amount): Decrease account balance
-        //   Now run an infinite loop in main program so it displays user with following options:
+        //   Now run an infinite loop in main program, so it displays user with following options:
         //   1.   Deposit
         //   2.   Withdraw
         //   3.   Balance

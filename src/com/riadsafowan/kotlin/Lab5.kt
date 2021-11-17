@@ -1,7 +1,6 @@
 package com.riadsafowan.kotlin
 
-import com.riadsafowan.java.Lab5
-import java.util.*
+import java.util.Scanner
 
 class Lab5 {
     internal object Task1 {
@@ -55,7 +54,7 @@ class Lab5 {
         //   3. Write a program that has the following static variable - balance (initial value 0) and these static methods:
         //   deposit(double amount): Increase account balance
         //   withdraw(double amount): Decrease account balance
-        //   Now run an infinite loop in main program so it displays user with following options:
+        //   Now run an infinite loop in main program, so it displays user with following options:
         //   1.   Deposit
         //   2.   Withdraw
         //   3.   Balance
