@@ -1,4 +1,4 @@
-package com.riadsafowan.quiz;
+package com.riadsafowan.java.quiz;
 
 import java.util.Scanner;
 
