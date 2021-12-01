@@ -1,5 +1,7 @@
 package com.riadsafowan.java;
 
+import java.util.Scanner;
+
 class Point {
     private int x;
     private int y;
@@ -76,8 +78,18 @@ class Line {
 
 public class Lab7 {
     public static void main(String[] args) {
-        Line l = new Line(12, 13, 14, 15);
-        System.out.println(l.length());
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter x1: ");
+        int x1 = scanner.nextInt();
+        System.out.print("Enter y1: ");
+        int y1 = scanner.nextInt();
+        System.out.print("Enter x2: ");
+        int x2 = scanner.nextInt();
+        System.out.print("Enter y2: ");
+        int y2 = scanner.nextInt();
+        Line l = new Line(x1, y1, x2, y2);
+        System.out.println("The distance between point" + new Point(x1,y1).toString() +" and point"+ new Point(x2,y2).toString()+" is "+ l.length());
+
     }
 }
 

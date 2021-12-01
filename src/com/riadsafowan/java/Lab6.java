@@ -1,5 +1,7 @@
 package com.riadsafowan.java;
 
+import java.util.Scanner;
+
 public class Lab6 {
     static class Fraction {
         private int numerator;
@@ -70,10 +72,20 @@ public class Lab6 {
 
     static class Test {
         public static void main(String[] args) {
-            Fraction fr1 = new Fraction(1, 4);
-            Fraction fr2 = new Fraction(3, 5);
 
-            System.out.println(fr1.toString());
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Enter first fractions numerator: ");
+            int n1 = scanner.nextInt();
+            System.out.print("Enter first fractions denominator: ");
+            int d1 = scanner.nextInt();
+            System.out.print("Enter second fractions numerator: ");
+            int n2 = scanner.nextInt();
+            System.out.print("Enter second fractions denominator: ");
+            int d2 = scanner.nextInt();
+
+            Fraction fr1 = new Fraction(n1, d1);
+            Fraction fr2 = new Fraction(n2, d2);
+
             fr1.add(fr2);
             fr1.sub(fr2);
             fr1.multiplication(fr2);
