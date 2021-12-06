@@ -63,6 +63,7 @@ public class Lab6 {
             if (f.numerator != 0) {
                 int n, d;
                 d = this.denominator * f.numerator;
+
                 n = this.numerator * f.denominator;
                 Fraction ans = new Fraction(n, d);
                 System.out.println(this.toString() + " / " + f.toString() + " = " + ans.toString());

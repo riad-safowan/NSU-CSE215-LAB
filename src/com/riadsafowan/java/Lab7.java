@@ -88,8 +88,7 @@ public class Lab7 {
         System.out.print("Enter y2: ");
         int y2 = scanner.nextInt();
         Line l = new Line(x1, y1, x2, y2);
-        System.out.println("The distance between point" + new Point(x1,y1).toString() +" and point"+ new Point(x2,y2).toString()+" is "+ l.length());
-
+        System.out.println("The distance between point" + new Point(x1, y1).toString() + " and point" + new Point(x2, y2).toString() + " is " + l.length());
     }
 }
 
