@@ -50,17 +50,19 @@ public class Lab11 {
 
             @Override
             public double area() {
-                return 0;
+                return length * width;
             }
 
             @Override
             public double perimeter() {
-                return 0;
+                return 2 * (length + width);
             }
         }
 
         public static void main(String[] args) {
             Shape s = new Rectangle("s", 123, 123);
+            System.out.println("Area: " + s.area());
+            System.out.println("Perimeter: " + s.perimeter());
         }
     }
 

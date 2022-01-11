@@ -74,6 +74,8 @@ public class Lab13 {
             } catch (IllegalTriangleException e) {
                 e.printStackTrace();
             }
+
+            System.out.println("Program continues....");
         }
     }
 }
