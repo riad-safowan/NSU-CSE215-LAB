@@ -1,6 +1,5 @@
 package com.riadsafowan.java.finalPracticeExercise;
 
-import java.awt.*;
 import java.util.GregorianCalendar;
 
 public class Chapter10 {
